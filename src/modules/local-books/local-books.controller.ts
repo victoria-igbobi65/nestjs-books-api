@@ -11,6 +11,7 @@ import {
 import { LocalBooksService } from './local-books.service';
 import { CreateLocalBookDto } from './dto/create-local-book.dto';
 import { UpdateLocalBookDto } from './dto/update-local-book.dto';
+import { FilterBooksDto } from './dto/filter-books.dto';
 
 @Controller('v1/local-books')
 export class LocalBooksController {
@@ -28,7 +29,7 @@ export class LocalBooksController {
   }
 
   @Get()
-  async findAll(@Query() query: any) {
+  async findAll(@Query() query: FilterBooksDto) {
     const books = await this.localBooksService.findAll(query);
     return { status_code: 200, status: 'success', data: books };
   }
