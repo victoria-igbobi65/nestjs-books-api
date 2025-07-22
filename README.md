@@ -52,3 +52,8 @@ docker run -d \
 npm run start:dev
 ```
 API will be live at: http://localhost:3000/api
+
+### 5. Run Test
+```bash
+npm run test
+```
