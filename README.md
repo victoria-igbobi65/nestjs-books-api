@@ -20,13 +20,13 @@ git clone https://github.com/victoria-igbobi65/nestjs-books-api.git
 cd nestjs-books-api
 ```
 
-2. Install dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-3. Create a .env file:
+### 3. Create a .env file:
 
 ```bash
 MONGO_URI=mongodb://root:pass@localhost:27017/nest-books?authSource=admin
@@ -34,7 +34,7 @@ MONGO_URI=mongodb://root:pass@localhost:27017/nest-books?authSource=admin
 
 You can use Docker to spin up MongoDB locally (see below).
 
-4. Run MongoDB with Docker (optional)
+### 4. Run MongoDB with Docker (optional)
 
 ```bash
 docker run -d \
@@ -46,7 +46,7 @@ docker run -d \
 
 ```
 
-5. Start the server
+### 5. Start the server
 
 ```bash
 npm run start:dev
